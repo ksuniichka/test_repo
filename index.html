@@ -3,88 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal website of Ksenia Petrova, showcasing her skills in web development and design.">
     <title>О себе</title>
-    <style>
-        .center {
-    display: block;
-    margin: 0 auto;
-}
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 20px;
-        }
-        header {
-            background:rgb(211, 181, 186);
-            color: white;
-            padding: 30px 0;
-            text-align: center;
-        }
-        nav {
-            margin: 20px 0;
-        }
-        nav a {
-            margin: 0 15px;
-            color: #FF1493;
-            text-decoration: none;
-        }
-        footer {
-            text-align: center;
-            margin-top: 20px;
-            font-size: 0.8em;
-        }
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YDrjoomPpLYghcLtw2yx7x7mUtUmejzmTBWIQW5qEiV38tVF9RoozNhcJjGvVVlbWLkg0q4WtK2VzyQg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-    <h1>Привет! Я Ksunichka</h1>
-    <nav>
-        <a href="#about">О себе</a>
-        <a href="#skills">Навыки</a>
-        <a href="#contact">Контакты</a>
-    </nav>
+    <div class="container">
+        <h1>Привет! Я Ksunichka</h1>
+        <nav>
+            <a href="#about">О себе</a>
+            <a href="#skills">Навыки</a>
+            <a href="#contact">Контакты</a>
+            <a href="gallery.html">Галерея</a>  <!-- Ссылка на галерею -->
+        </nav>
+    </div>
 </header>
 
 <main>
-    <section id="about">
-        <h2>О себе</h2>
-        <p>Я увлекаюсь веб-разработкой и дизайном. В свободное время занимаюсь спортом.</p>
-        <img alt="my photo" width="300" class="center">
-    </section>
+    <div class="container">
+        <section id="about">
+            <h2>О себе</h2>
+            <p>Я увлекаюсь веб-разработкой и дизайном.</p>
+            <img src="фото.jpg" alt="Ксения Петрова" width="300" class="center">
+        </section>
 
-    <section id="skills">
-        <h2>Языки программирования:</h2>
-        <ul>
-            <li>HTML</li>
-            <li>C++</li>
-            <li>C#</li>
-            <li>Python</li>
-        </ul>
-    </section>
+        <section id="skills">
+            <h2>Языки программирования:</h2>
+            <ul>
+                <li>HTML5, CSS3</li>
+                <li>C++</li>
+                <li>C#</li>
+                <li>Python</li>
+            </ul>
+        </section>
 
-    <section id="contact">
-        <h2>Связь со мной</h2>
-        <p>Напишите мне на почту:</p>
-        <form action="mailto:ksunichka.petrova@gmail.com" method="post" enctype="text/plain">
-            <label for="name">Your address:</label><br>
-            <input type="text" id="name" name="name" required><br>
-            <label for="message">Your massage:</label><br>
-            <textarea id="message" name="message" rows="4" required></textarea><br>
-            <button type="submit">Send</button>
-        </form>
-    </section>
-    
-    <blockquote>
-        <q>ТВОРИ, МЕЧТАЙ, ЛЮБИ.</q>
-        <p>— цитатка</p>
-    </blockquote>
+        <section id="contact">
+            <h2>Связь со мной</h2>
+            <p>Напишите мне на почту:</p>
+            <form action="https://formspree.io/f/YOUR_FORM_ID" method="post">
+                <label for="email">Ваш адрес:</label><br>
+                <input type="email" id="email" name="_replyto" required><br>
+                <label for="message">Ваше сообщение:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br>
+                <button type="submit">Отправить</button>
+            </form>
+        </section>
+
+        <blockquote>
+            <p>ТВОРИ, МЕЧТАЙ, ЛЮБИ.</p>
+            <cite>— цитатка</cite>
+        </blockquote>
+    </div>
 </main>
 
 <footer>
-    <hr>
-    <p>&copy; 2025 Петрова Ксения Андреевна. Все права защищены.</p>
+    <div class="container">
+        <hr>
+        <p>&copy; 2025 Петрова Ксения Андреевна. Все права защищены.</p>
+    </div>
 </footer>
 
 </body>

@@ -1,8 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ваш заголовок</title>
-    <link rel="stylesheet" href="css/normalize.css"> <!-- Или reseter.css -->
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  
+    <meta name="description" content="Галерея изображений на сайте Ksenia Petrova.">
+    <title>Галерея</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YDrjoomPpLYghcLtw2yx7x7mUtUmejzmTBWIQW5qEiV38tVF9RoozNhcJjGvVVlbWLkg0q4WtK2VzyQg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .gallery figure {
+            margin: 0;
+            width: 300px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden; 
+            box-shadow: 0 2px 5px rgba(221, 166, 200, 0.1);
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            display: block; 
+            object-fit: cover;  
+            object-position: center; 
+        }
+
+        .gallery figcaption {
+            padding: 10px;
+            text-align: center;
+            font-size: 1.4rem;
+            color: var(--secondary-color);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1>Галерея</h1>
+        <nav>
+            <a href="index.html">Главная</a> <!-- Ссылка на главную страницу -->
+        </nav>
+    </div>
+</header>
+
+<main>
+    <div class="container">
+        <section class="gallery">
+            <figure>
+                <img src="панда.jpg" alt="панда">
+                <figcaption>формат JPEG</figcaption>
+            </figure>
+
+            <figure>
+                <img src="дино.png" alt="дино">
+                <figcaption>формат PNG</figcaption>
+            </figure>
+
+            <figure>
+                <img src="пчелка.svg" alt="пчелка">
+                <figcaption>формат SVG</figcaption>
+            </figure>
+
+             <figure>
+                <img src="единорог.webp" alt="единорог">
+                <figcaption>формат WEBP</figcaption>
+            </figure>
+        </section>
+    </div>
+</main>
+
+<footer>
+    <div class="container">
+        <hr>
+        <p>&copy; 2025 Петрова Ксения Андреевна. Все права защищены.</p>
+    </div>
+</footer>
+
+</body>
+</html>
